@@ -5,7 +5,7 @@ from model import predict
 
 API_KEY = "YOUR_SECRET_KEY"
 
-app = FastAPI(title="AI Generated Voice Detection API")
+app = FastAPI(title="Voice Classifier API")
 
 class AudioRequest(BaseModel):
     audio_base64: str
