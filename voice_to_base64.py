@@ -1,6 +1,6 @@
 import base64
 
 with open("sample.mp3", "rb") as f:
-    encoded = base64.b64encode(f.read()).decode()
+    b64 = base64.b64encode(f.read()).decode("utf-8")
 
-print(encoded)
+print(b64)
